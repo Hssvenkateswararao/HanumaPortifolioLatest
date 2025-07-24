@@ -1,5 +1,4 @@
-import React from 'react';
-import { ExternalLink, Github, Code, Database, Globe } from 'lucide-react';
+import { ExternalLink, Code, Database, Globe, Github } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -41,7 +40,7 @@ const Projects = () => {
     }
   ];
 
-  const ProjectCard = ({ project, index }: { project: typeof projects[0], index: number }) => (
+  const ProjectCard = ({ project }: { project: typeof projects[0], index: number }) => (
     <div className={`bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${
       project.featured ? 'lg:col-span-2' : ''
     }`}>
